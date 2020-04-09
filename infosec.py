@@ -7,7 +7,7 @@ if len(sys.argv) < 2:
     print('Usage: ' + sys.argv[0] + " <url>")
     sys.exit(1)
 
-req = requests.get("https://"+sysargv[1])
+req = requests.get("https://"+sys.argv[1])
 print("\n"+str(req.headers))
 
 gethostby_ = socket.gethostbyname(sys.argv[1])
